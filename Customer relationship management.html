@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRM System</title>
+    <link rel="stylesheet" href="Customer relationship management.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Customer Relationship Management System</h1>
+        <div class="actions">
+            <button id="addCustomerBtn">Add Customer</button><----Click here to add Customer Details
+        </div>
+        <div id="customersList">
+            <!-- Customer list will be populated here -->
+        </div>
+        <div id="customerDetails">
+            <!-- Customer details will be displayed here -->
+        </div>
+    </div>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Add Customer</h2>
+            <form id="customerForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <button type="submit">Save</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="Customer relationship management.js"></script>
+</body>
+</html>
